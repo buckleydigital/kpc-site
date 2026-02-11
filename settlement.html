@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settlement Cleaning Gold Coast | Pre-Sale Cleaning | Kays Pro Cleaning</title>
+    <meta name="description" content="Professional settlement cleaning services for Gold Coast property sales. Pre-sale and post-sale cleaning to ensure smooth handovers.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --brand-color: #38B7FF;
+            --brand-hover: #2da8f0;
+            --text-dark: #1a1a1a;
+            --text-gray: #555;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 46px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-color);
+        }
+
+        .btn-primary {
+            background: var(--brand-color);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--brand-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(56, 183, 255, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn svg {
+            width: 24px;
+            height: 24px;
+            color: var(--text-dark);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            z-index: 1001;
+            padding: 2rem;
+            flex-direction: column;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .mobile-menu-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-menu-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .mobile-menu .btn-primary {
+            margin-top: 2rem;
+            justify-content: center;
+            width: fit-content;
+        }
+
+        /* Page Header Spacer */
+        .page-header-spacer {
+            margin-top: 72px;
+        }
+
+        /* Hero Section */
+        .service-hero {
+            padding: 5rem 2rem 3rem;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .service-hero .subtitle {
+            color: var(--text-gray);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 4rem 2rem;
+            background: var(--white);
+        }
+
+        .service-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .service-container h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .service-container p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: var(--border-radius);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            border-color: var(--brand-color);
+            transform: translateY(-3px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--brand-color);
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: var(--white);
+            text-align: center;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--brand-color);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand img {
+            height: 50px;
+            margin-bottom: 1.5rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-brand p {
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            max-width: 300px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            text-align: left;
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="https://kaysprocleaning.com.au/" class="logo">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-main-logo.png" alt="Kays Pro Cleaning">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="https://kaysprocleaning.com.au/about">About</a></li>
+                <li><a href="https://kaysprocleaning.com.au/services">Services</a></li>
+                <li><a href="https://kaysprocleaning.com.au/quote" class="btn-primary">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="https://kaysprocleaning.com.au/" class="logo">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-main-logo.png" alt="Kays Pro Cleaning" style="height: 40px;">
+            </a>
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="https://kaysprocleaning.com.au/" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="https://kaysprocleaning.com.au/about" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="https://kaysprocleaning.com.au/services" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="https://kaysprocleaning.com.au/contact" onclick="toggleMobileMenu()">Contact</a></li>
+            <li><a href="https://kaysprocleaning.com.au/pricing" onclick="toggleMobileMenu()">Pricing</a></li>
+        </ul>
+        <a href="https://kaysprocleaning.com.au/quote" class="btn-primary" onclick="toggleMobileMenu()">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+    </div>
+
+    <div class="page-header-spacer"></div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <h1>Settlement Cleaning Gold Coast</h1>
+        <p class="subtitle">Professional pre-sale and post-sale cleaning services for property settlements. Ensuring smooth handovers for buyers and sellers.</p>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="service-container">
+            <h2>Selling or Buying? We've Got You Covered</h2>
+            <p>Settlement day cleaning ensures properties are immaculate for new owners. Whether you need a pre-sale spruce up to maximise buyer appeal or a post-purchase deep clean before moving in, our team delivers pristine results.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Pre-Sale Cleaning</h3>
+                    <p>Make your property shine for open homes and inspections.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Post-Sale Cleaning</h3>
+                    <p>Move into a spotless home with our thorough deep clean.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3>Flexible Timing</h3>
+                    <p>We work around settlement dates and key handovers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Settlement coming up?</h2>
+        <p>Book your settlement clean today. Flexible scheduling around your property transfer.</p>
+        <a href="https://kaysprocleaning.com.au/quote" class="btn-primary">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-footer-logo.png" alt="Kays Pro Cleaning">
+                <p>Professional Residential & Commercial Cleaning Services Across Gold Coast & Surrounding Areas.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">ABN 11 402 840 571</p>
+                
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/kaysprocleaning" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Kays-Pro-Cleaning/61578046557156/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="https://kaysprocleaning.com.au/">Home</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/about">About</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/services">Services</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/service-areas">Service Areas</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/contact">Contact</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/pricing">Pricing</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="https://kaysprocleaning.com.au/bond">Bond Cleaning</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/settlement">Settlement Cleaning</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/commercial">Commercial Cleaning</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kays Pro Cleaning - All right reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
