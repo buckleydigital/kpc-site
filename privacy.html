@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Kays Pro Cleaning | Gold Coast Cleaning Services</title>
+    <meta name="description" content="Kays Pro Cleaning Privacy Policy. Learn how we collect, use, store, and protect your personal information when you use our Gold Coast cleaning services.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --brand-color: #38B7FF;
+            --brand-hover: #2da8f0;
+            --text-dark: #1a1a1a;
+            --text-gray: #555;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles - UNCHANGED */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 46px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-color);
+        }
+
+        .btn-primary {
+            background: var(--brand-color);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--brand-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(56, 183, 255, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn svg {
+            width: 24px;
+            height: 24px;
+            color: var(--text-dark);
+        }
+
+        /* Mobile Menu - UNCHANGED */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            z-index: 1001;
+            padding: 2rem;
+            flex-direction: column;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .mobile-menu-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-menu-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .mobile-menu .btn-primary {
+            margin-top: 2rem;
+            justify-content: center;
+            width: fit-content;
+        }
+
+        /* Page Header Spacer */
+        .page-header-spacer {
+            margin-top: 72px;
+        }
+
+        /* Privacy Page Specific Styles */
+        .privacy-hero {
+            padding: 5rem 2rem 3rem;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .privacy-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .privacy-hero .subtitle {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--brand-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Privacy Content Sections */
+        .privacy-section {
+            padding: 4rem 2rem;
+            background: var(--white);
+        }
+
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .privacy-intro {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .privacy-card {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--brand-color);
+            transition: var(--transition);
+        }
+
+        .privacy-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(56, 183, 255, 0.1);
+        }
+
+        .privacy-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .privacy-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .privacy-card p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .privacy-card ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+        }
+
+        .privacy-card li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .privacy-card strong {
+            color: var(--text-dark);
+        }
+
+        .section-number {
+            background: var(--brand-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .contact-box {
+            background: var(--brand-color);
+            color: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            transition: var(--transition);
+        }
+
+        .contact-box a:hover {
+            border-bottom-color: white;
+        }
+
+        /* Footer - UNCHANGED */
+        footer {
+            background: var(--brand-color);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand img {
+            height: 50px;
+            margin-bottom: 1.5rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-brand p {
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            max-width: 300px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            text-align: left;
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .privacy-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .privacy-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-card h2 {
+                font-size: 1.25rem;
+            }
+
+            .privacy-section {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header - EXACTLY AS PROVIDED -->
+    <header>
+        <nav>
+            <a href="https://kaysprocleaning.com.au/" class="logo">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-main-logo.png" alt="Kays Pro Cleaning">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="https://kaysprocleaning.com.au/about">About</a></li>
+                <li><a href="https://kaysprocleaning.com.au/services">Services</a></li>
+                <li><a href="https://kaysprocleaning.com.au/quote" class="btn-primary">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu - EXACTLY AS PROVIDED -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="https://kaysprocleaning.com.au/" class="logo">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-main-logo.png" alt="Kays Pro Cleaning" style="height: 40px;">
+            </a>
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="https://kaysprocleaning.com.au/" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="https://kaysprocleaning.com.au/about" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="https://kaysprocleaning.com.au/services" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="https://kaysprocleaning.com.au/contact" onclick="toggleMobileMenu()">Contact</a></li>
+            <li><a href="https://kaysprocleaning.com.au/pricing" onclick="toggleMobileMenu()">Pricing</a></li>
+        </ul>
+        <a href="https://kaysprocleaning.com.au/quote" class="btn-primary" onclick="toggleMobileMenu()">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+    </div>
+
+    <div class="page-header-spacer"></div>
+
+    <!-- Privacy Hero -->
+    <section class="privacy-hero">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Your privacy is important to us. Learn how we collect, use, and protect your personal information.</p>
+        <span class="last-updated">Last Updated: Nov 22, 2025</span>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="privacy-section">
+        <div class="privacy-container">
+            <p class="privacy-intro">
+                At Kays Pro Cleaning, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you visit our website, submit enquiries, or use our cleaning services.
+            </p>
+
+            <!-- Section 1 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">1</span> Information We Collect</h2>
+                <p>We may collect the following types of information:</p>
+                
+                <h3>Personal Information</h3>
+                <p>Provided directly by you when submitting a form, booking a service, or contacting us, including:</p>
+                <ul>
+                    <li>Full name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Service address</li>
+                    <li>Any additional details you choose to provide</li>
+                </ul>
+
+                <h3>Website & Usage Data</h3>
+                <p>Collected automatically through analytics tools:</p>
+                <ul>
+                    <li>IP address</li>
+                    <li>Browser type</li>
+                    <li>Device information</li>
+                    <li>Pages visited</li>
+                    <li>Time spent on site</li>
+                    <li>Cookies & tracking identifiers</li>
+                </ul>
+                <p>We use this data to improve website performance and user experience.</p>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">2</span> How We Use Your Information</h2>
+                <p>Kays Pro Cleaning may use your information to:</p>
+                <ul>
+                    <li>Provide and deliver cleaning services</li>
+                    <li>Send quotes, invoices, confirmations, and service updates</li>
+                    <li>Respond to enquiries or customer support requests</li>
+                    <li>Improve our website, services, and marketing</li>
+                    <li>Send optional promotional offers (only with consent)</li>
+                    <li>Maintain internal records and quality assurance</li>
+                </ul>
+                <p><strong>We do not sell, rent, or trade your personal data.</strong></p>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">3</span> Sharing Your Information</h2>
+                <p>We may share your information only when necessary and only with:</p>
+                <ul>
+                    <li>Trusted service partners (e.g., payment processors, booking tools)</li>
+                    <li>Contractors performing cleaning services</li>
+                    <li>Legal authorities where required by law</li>
+                </ul>
+                <p>All partners are required to follow strict confidentiality and privacy standards.</p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">4</span> Data Storage & Security</h2>
+                <p>We take reasonable steps to safeguard your information, including:</p>
+                <ul>
+                    <li>Secure servers and encrypted storage</li>
+                    <li>Limited internal access to personal data</li>
+                    <li>Regular security reviews</li>
+                </ul>
+                <p>However, no internet-based service is 100% secure. We encourage users to take their own precautions online.</p>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">5</span> Cookies & Tracking</h2>
+                <p>kaysprocleaning.com.au may use cookies to:</p>
+                <ul>
+                    <li>Improve website functionality</li>
+                    <li>Deliver personalised experiences</li>
+                    <li>Analyse site performance</li>
+                </ul>
+                <p>You can disable cookies through your browser settings, but some features may not work as intended.</p>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">6</span> Your Rights</h2>
+                <p>You may request at any time to:</p>
+                <ul>
+                    <li>Access your personal information</li>
+                    <li>Correct inaccurate details</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt out of marketing communications</li>
+                </ul>
+                <p>Contact us to submit a request.</p>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">7</span> Third-Party Links</h2>
+                <p>Our website may contain links to external websites. Kays Pro Cleaning is not responsible for the content or privacy practices of those sites.</p>
+            </div>
+
+            <!-- Section 8 -->
+            <div class="privacy-card">
+                <h2><span class="section-number">8</span> Updates to This Policy</h2>
+                <p>We may update this Privacy Policy when necessary. Changes will be posted here with an updated "Last Updated" date.</p>
+            </div>
+
+            <!-- Section 9 - Contact -->
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p>For privacy enquiries, data access requests, or general questions:</p>
+                <p style="margin-top: 1rem; font-size: 1.1rem;">
+                    <strong>Kays Pro Cleaning</strong><br>
+                    Email: <a href="mailto:mikaela@kaysprocleaning.com.au">mikaela@kaysprocleaning.com.au</a><br>
+                    Website: <a href="https://kaysprocleaning.com.au">kaysprocleaning.com.au</a><br>
+                    ABN 11 402 840 571
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - EXACTLY AS PROVIDED -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="https://raw.githubusercontent.com/buckleydigital/kpc-site/main/kays-pro-footer-logo.png" alt="Kays Pro Cleaning">
+                <p>Professional Residential & Commercial Cleaning Services Across Gold Coast & Surrounding Areas.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">ABN 11 402 840 571</p>
+                
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/kaysprocleaning" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Kays-Pro-Cleaning/61578046557156/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="https://kaysprocleaning.com.au/">Home</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/about">About</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/services">Services</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/service-areas">Service Areas</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/contact">Contact</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/pricing">Pricing</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="https://kaysprocleaning.com.au/bond">Bond Cleaning</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/settlement">Settlement Cleaning</a></li>
+                    <li><a href="https://kaysprocleaning.com.au/commercial">Commercial Cleaning</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kays Pro Cleaning - All right reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle - EXACTLY AS PROVIDED
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
